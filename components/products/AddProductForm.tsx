@@ -31,7 +31,7 @@ export default function AddProductForm({ children }: { children: React.ReactNode
             return
         }
         toast.success('Producto creado correctamente')
-        router.push('/admin/prodcuts')
+        router.push('/admin/products')
     }
     return (
         <div className="bg-white mt-10 px-5 py-10 rounded-md shadow-md max-w-3xl mx-auto" >
