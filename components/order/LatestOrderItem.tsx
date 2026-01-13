@@ -1,4 +1,3 @@
-import { products } from '@/prisma/data/products'
 import { OrderWithProducts } from '@/src/types'
 import React from 'react'
 
