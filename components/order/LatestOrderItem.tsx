@@ -1,5 +1,5 @@
 import { OrderWithProducts } from '@/src/types'
-import { OrderProducts, Product } from '@prisma/client'
+import { OrderProduct, Product } from '@prisma/client'
 import React from 'react'
 
 type LatestOrderItemProps = {
@@ -14,7 +14,7 @@ export default function LatestOrderItem({ order }: LatestOrderItemProps) {
             </p>
             <ul className='divide-y divide-gray-200 border-t border-gray-200 text-sm font-medium text-gray-500' role='list'>
                 {order.orderProducts.map(
-                    (product: OrderProducts & { product: Product }) => (
+                    (product: OrderProduct & { product: Product }) => (
                         <li key={product.id} className="flex py-6 text-lg">
                             <p>
                                 <span className="font-bold">({product.quantity})</span>{" "}
