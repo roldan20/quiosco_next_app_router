@@ -1,5 +1,5 @@
 import { OrderWithProducts } from '@/src/types'
-import { OrderProducts, Product } from '@prisma/client'
+import { OrderProducts, Product } from '@/app/generated/prisma'
 import React from 'react'
 
 type LatestOrderItemProps = {
